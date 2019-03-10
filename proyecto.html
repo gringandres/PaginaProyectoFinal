@@ -8,24 +8,47 @@
     <title>Life Sheet</title>
 </head>
 <body>
-    <div>
-        <section class="sidenav">
-            <figure> <!-- // etiqueta nueva poco usada-->
-                <img src="andres.jpg" class="" alt="Andres Betancur" >
-                <figcaption>
-                    <h2>Hi</h2>
-                    <h1>I'm Andres</h1>
-                </figcaption>
-                
-            </figure>
-            <nav>
-                <a aria-selected="true" aria-controls="#about" href="#about"> About Me</a>
-                <a aria-selected="false" aria-controls="#songs" href="#songs">Songs</a>
-                <a aria-selected="false" aria-controls="#hobbies" href="#hobbies">Hobbies</a>
-                <a aria-selected="false" aria-controls="#tips" href="#tips"> Tips</a>
-                <a aria-selected="false" aria-controls="#games" href="#games">Games</a>
-            </nav>
-        </section>
+
+    <!-- Navbar (top Part) -->
+    <div class="top">
+        <div class="bar" id="myNavBar">
+            <a class="navprincipal" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle NavMenu">
+                <i class="fa bars"></i>
+            </a>
+            <a href="#home" class="item home">Home</a>
+            <a href="#about" class="item button hide small"><i class="fa about"></i> About Me</a>
+            <a href="#songs" class="item button hide small"><i class="fa songs"></i>Songs</a>
+            <a href="#hobbies"class="item button hide small"><i class="fa hobbies"></i>Hobbies</a>
+            <a href="#tips"class="item button hide small"><i class="fa tips"></i> Tips</a>
+            <a href="#games"class="item button hide small"><i class="fa games"></i>Games</a>
+            <a href="#" class="search">
+                <i class="fa search"></i>
+            </a>
+        </div>  
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="navSmall">
+                <a href="#about" class="item button"><i class="fa about"></i> About Me</a>
+                <a href="#songs" class="item button"><i class="fa songs"></i>Songs</a>
+                <a href="#hobbies"class="item button"><i class="fa hobbies"></i>Hobbies</a>
+                <a href="#tips"class="item button"><i class="fa tips"></i> Tips</a>
+                <a href="#games"class="item button"><i class="fa games"></i>Games</a>
+                <a href="#" class="item button">Search</a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
         <section class="everybody">
             <main>
                 <article id="about">
