@@ -1,67 +1,70 @@
-/* The sidebar menu */
-.sidenav {
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 400px; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: rgb(7, 6, 6); /* Black */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
-    box-shadow: 4px 0 20px 0px #119c3b;
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
 }
-
-/* The navigation menu links */
-.sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #ffffff;
-    display: block;
     
-  }
-
-  .sidenav figure{
-    margin-top: 100px;
-    margin-left: 130px;
-    margin-right: 100px;
-
-  }
-
-  .sidenav nav{
-    margin-left:130px;
-
-  }
-
-  .sidenav figure img {
-    width: 100px;
-    border-radius: 50px;
-  }
-  
-
-  /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-    color: #959191d0;
-  }
-
-  /* Style page content */
-.everybody {
-    margin-left: 410px; /* Same as the width of the sidebar */
-    padding: 0px 10px;
-    display: block;
-  }
-
-  .sidenav h1 {
-      
-      color:  #ffffff;
-      border-bottom: 2px solid #119c3b; 
-      border-bottom-right-radius: 50px;
-      border-bottom-style: groove;
-  }
-  
-  .sidenav h2 {
-      
-    color:  #ffffff;
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
+.aboutme{
+    color: white;
+    background-color:#282E34;
+    text-align:center;
+    padding:50px 80px;
+    text-align: justify;
+}
+
+.bgimg-1 {
+    background-image: url("img3.jpg");
+    min-height: 100%;
+}
+    
+.bgimg-2 {
+    background-image: url("img2.jpg");
+    min-height: 400px;
+}
+    
+.bgimg-3 {
+    background-image: url("messi.jpg");
+    min-height: 400px;
+}
+    
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+    
+.caption span.border {
+    background-color:transparent;
+    color:black;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+    
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: white;
+}
+    
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    }
+}
