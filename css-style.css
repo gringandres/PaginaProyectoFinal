@@ -10,10 +10,6 @@ body, html {
 }
 
 /* Navbar */
-.top{
-    top: 0;
-}
-
 .navBar{
     width: 100%;
     position: absolute;
@@ -61,7 +57,7 @@ background-color: rgba(88, 86, 86, 0.466);
     text-align:center;
     text-align: justify;
     padding-bottom: 100px;
-    padding:50px 200px 200px 200px; /*top rigth bot top*/
+    padding:50px 200px 100px 200px; /*top rigth bot top*/
 }
 
 .imgSection p{
@@ -85,7 +81,15 @@ background-color: rgba(88, 86, 86, 0.466);
     padding-top: 25px;
 }
 
+.video{
+    padding: 10px 200px 0px 200px;
+}
+
 /* Songs*/
+
+.psong{
+    padding: 0px 0px 50px 10px;
+}
 
 table, td, th{
     border: none;
@@ -95,10 +99,11 @@ table, td, th{
 table{
     border-collapse: collapse;
     width: 100%;
+    
 }
 
 td, th{
-    padding: 15px;
+    padding: 10px;
 }
 
 .caption {
@@ -130,7 +135,7 @@ h3 {
 
 /*parallax imagenes */
 
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
     position: relative;
     opacity: 0.65;
     background-attachment: fixed;
@@ -140,17 +145,22 @@ h3 {
 }
 
 .bgimg-1 {
-    background-image: url("img3.jpg");
+    background-image: url("img4.jpg");
     min-height: 100%;
 }
     
 .bgimg-2 {
-    background-image: url("img2.jpg");
+    background-image: url("img5.jpg");
     min-height: 400px;
 }
     
 .bgimg-3 {
-    background-image: url("messi.jpg");
+    background-image: url("img6.jpg");
+    min-height: 400px;
+}
+
+.bgimg-4 {
+    background-image: url("img7.jpg");
     min-height: 400px;
 }
     
