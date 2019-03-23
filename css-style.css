@@ -12,9 +12,10 @@ body, html {
 /* Navbar */
 .navBar{
     width: 100%;
-    position: absolute;
+    position:fixed;
     z-index: 1;
     overflow: hidden;
+    background-color: white;
 
 }
 
@@ -97,7 +98,7 @@ background-color: rgba(88, 86, 86, 0.466);
     padding-bottom: 10px;
 }
 
-.container{
+.container, .btn{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -128,6 +129,7 @@ h3 {
     color: white;
     text-align: center;
 }
+
 
 
 
@@ -165,8 +167,29 @@ h3 {
 
     
 /* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
+@media only screen and (max-device-width: 425px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: scroll;
     }
+}
+
+
+@media only screen and (max-width: 768px){
+    div.top{
+        display: contents;
+    }
+    div.dropdown{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 425px){
+    div.top{
+        display: none;
+    }
+    div.dropdown{
+        display: contents;
+    }
+
 }
