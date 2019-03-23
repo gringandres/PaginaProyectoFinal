@@ -42,12 +42,6 @@ body, html {
 background-color: rgba(88, 86, 86, 0.466);
 }
 
-@media screen and (max-width: 500px){
-    .navBar a{
-        float: none;
-        display: block;
-    }
-}
 
 
 /*about me part*/
@@ -98,7 +92,7 @@ background-color: rgba(88, 86, 86, 0.466);
     padding-bottom: 10px;
 }
 
-.container, .btn{
+.container, div.btn{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -184,11 +178,21 @@ h3 {
 }
 
 @media only screen and (max-width: 425px){
-    div.top{
+    div.top, .video, .container, div.btn, h3.tag, p.logo{
         display: none;
     }
     div.dropdown{
         display: contents;
     }
-
+    div.imgSection, h3, p, .psong{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .info{
+        padding:50px 50px 50px 50px; /*top rigth bot left*/
+    }
+    div.imgSection{
+        padding: 10px 0px 0px 50px;
+    }
 }
