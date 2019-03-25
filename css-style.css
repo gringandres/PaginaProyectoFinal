@@ -154,7 +154,10 @@ h3 {
     justify-content: center;
  
 }
+.lbl{
 
+    text-align: center;
+}
 
 .imgSection2 img{
     height: 300px;
@@ -164,13 +167,25 @@ h3 {
  /* video part */
 
 
-.games-h3, .games-p, .container3, .btn-games{
+.games-h3, .games-p, .container3, .btn-games, .btn-food{
 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+/* footer */
+
+.footer1, .footer2 {
+    position: unset;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    color: black;
+    text-align: center;
+  }
 
 
 /*parallax imagenes */
@@ -214,20 +229,20 @@ h3 {
 
 
 @media only screen and (max-width: 100000px){
-    div.top{
+    div.top, .footer1{
         display: contents;
     }
-    div.dropdown{
+    div.dropdown, .footer2{
         display: none;
     }
 
 }
 
 @media only screen and (max-width: 425px){
-    div.top, h3.tag, p.logo{
+    div.top, h3.tag, p.logo, .footer1{
         display: none;
     }
-    div.dropdown{
+    div.dropdown, .footer2{
         display: contents;
     }
     div.imgSection, h3, p, .psong, .btn{
